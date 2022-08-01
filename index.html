@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- font awsome cdn -->
   <script src="https://kit.fontawesome.com/5a6e447df1.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/style.css">
   <title>iNeuron | Home</title>
@@ -95,38 +98,81 @@
         <span>Upskill</span> yourself for<br /?>
         an in-demand career
       </h1>
-      <div class="cards">
-        <div class="card">
-          <img src="./assets/fsjs.webp" alt="full stack course">
-          <h2>Full Stack Javascript Web Developer</h2>
-          <p>Learn everything about JavaScript with React, Vue, Angular, Nodejs, MongoDB, NextJS, Tailwind, etc. Build
-            industry ready
-            projects.</p>
+      <div id="wrapper">
+        <div class="cards">
+          <div class="card">
+            <img src="./assets/fsjs.webp" alt="full stack course">
+            <div class="course-text">
+              <h2>Full Stack Javascript Web Developer</h2>
+              <p>Learn everything about JavaScript with React, Vue, Angular, Nodejs, MongoDB, NextJS, Tailwind, etc.
+                Build
+                industry ready
+                projects.</p>
+            </div>
+            <button>Explore</button>
+          </div>
+          <div class="card">
+            <img src="./assets/youtube.jpg" alt="youtube course">
+            <div class="course-text">
+              <h2>YouTube Mastery</h2>
+              <p>Learn everything about JavaScript with React, Vue, Angular, Nodejs, MongoDB, NextJS, Tailwind, etc.
+                Build
+                industry ready
+                projects.</p>
+            </div>
+            <button>Explore</button>
+          </div>
+          <div class="card">
+            <img src="./assets/fsds.jpg" alt="full stack data course">
+            <div class="course-text">
+              <h2>Full Stack Data Science Bootcamp</h2>
+              <p>Full-stack data science course is a live mentor-led job guaranteed certification program with a
+                full-time
+                one-year
+                internship provided by iNeuron.</p>
+            </div>
+            <button>Explore</button>
+
+          </div>
+          <div class="card">
+            <img src="./assets/android.jpg" alt="android course">
+            <div class="course-text">
+              <h2>Android Technical Interview Preparation</h2>
+              <p>Learn everything about android with java, selenium, junit, windows programming, kotlin, etc. Build
+                industry ready
+                projects.</p>
+            </div>
+            <button>Explore</button>
+          </div>
+          <div class="card">
+            <img src="./assets/digital-mr.jpg" alt="full stack course">
+            <div class="course-text">
+              <h2>Digital Marketing Batch 2 in Hindi</h2>
+              <p>Digital Marketing Course Will Help You in businesses of all sizes by giving access to the mass market
+                at
+                an affordable
+                price. Unlike TV or print advertising.</p>
+            </div>
+            <button>Explore</button>
+          </div>
         </div>
-        <div class="card">
-          <img src="./assets/fsjs.webp" alt="full stack course">
-          <h2>Full Stack Javascript Web Developer</h2>
-          <p>Learn everything about JavaScript with React, Vue, Angular, Nodejs, MongoDB, NextJS, Tailwind, etc. Build
-            industry ready
-            projects.</p>
-        </div>
-        <div class="card">
-          <img src="./assets/fsjs.webp" alt="full stack course">
-          <h2>Full Stack Javascript Web Developer</h2>
-          <p>Learn everything about JavaScript with React, Vue, Angular, Nodejs, MongoDB, NextJS, Tailwind, etc. Build
-            industry ready
-            projects.</p>
-        </div>
-        <div class="card">
-          <img src="./assets/fsjs.webp" alt="full stack course">
-          <h2>Full Stack Javascript Web Developer</h2>
-          <p>Learn everything about JavaScript with React, Vue, Angular, Nodejs, MongoDB, NextJS, Tailwind, etc. Build
-            industry ready
-            projects.</p>
-        </div>
+        <button id="prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+          </svg>
+        </button>
+        <button id="next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+          </svg>
+        </button>
       </div>
     </div>
   </section>
+
+  <script src="./js/script.js"></script>
 
 </body>
 
