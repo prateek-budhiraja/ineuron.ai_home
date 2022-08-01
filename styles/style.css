@@ -11,6 +11,8 @@
 }
 
 body {
+  max-width: 100vw;
+  overflow-x: hidden;
   background: var(--black);
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -48,13 +50,13 @@ nav span i {
   font-size: 18px;
   color: var(--black);
   position: absolute;
-  top: 8px;
-  left: 10px;
+  top: 10px;
+  left: 12px;
   -webkit-text-stroke: 1px #fff;
 }
 
 #search {
-  padding: 10px;
+  padding: 12px;
   padding-left: 40px;
   width: 300px;
   border-radius: 30px;
@@ -86,7 +88,7 @@ nav span:focus ul {
 nav span ul {
   padding: 10px;
   background-color: var(--black);
-  box-shadow: -2px 2px 5px var(--blue-shade);
+  box-shadow: -2px 2px 4px var(--blue-shade);
   font-size: 18px;
   width: 250px;
   list-style: none;
@@ -174,3 +176,92 @@ button.hero-cta:hover {
   width: 200px;
   height: 60px;
 } */
+
+.numbers {
+  width: 800px;
+  background-color: var(--blue);
+  margin: 80px auto;
+  color: var(--black);
+  box-shadow: -10px 15px var(--blue-shade);
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 30px 20px;
+  cursor: default;
+}
+
+.numbers h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.numbers p {
+  font-weight: 400;
+  margin: 0;
+  font-size: 24px;
+}
+
+
+
+
+/* upslill section */
+.upskill {
+  position: relative;
+}
+
+.bg-header {
+  /* width: 100vw; */
+  position: absolute;
+  overflow: hidden;
+  text-overflow: clip;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 105%;
+  color: rgba(49, 59, 63, 0.3);
+  z-index: -1;
+  left: -192px;
+  width: 2380px;
+}
+
+.heading h1 {
+  font-size: 94px;
+  line-height: 105%;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.heading h1 span {
+  position: relative;
+}
+
+
+.heading h1 span::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -10px;
+  top: 2px;
+  z-index: -1;
+  background-color: var(--blue);
+  width: 310px;
+  height: 110px;
+  transform: rotate(-3.5deg);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: var(--blue-shade);
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
