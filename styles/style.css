@@ -521,12 +521,28 @@ button.hero-cta:hover {
 
 
 .contact-container {
+  position: relative;
   background-color: var(--blue);
   padding: 40px 100px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
   align-items: center;
+}
+
+#cats {
+  position: absolute;
+  z-index: 0;
+  opacity: 10%;
+  right: 0px;
+  height: 490px;
+  width: 700px;
+}
+
+#cats img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .contact label {
@@ -549,6 +565,7 @@ textarea {
   border: 0;
   padding: 8px;
   outline: none;
+  /* z-index: 0; */
 }
 
 
@@ -576,6 +593,7 @@ form button {
 
 .contact-container .right {
   margin-left: 80px;
+  z-index: 2;
 }
 
 .contact-container .right h1 {
@@ -586,4 +604,59 @@ form button {
   font-size: 42px;
   font-weight: 300;
   color: var(--blue-shade);
+}
+
+footer img {
+  width: 120px;
+}
+
+footer {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  gap: 2em;
+  padding: 20px 50px;
+}
+
+.company h3 {
+  margin-left: 100px;
+}
+
+footer h3 {
+  font-size: 20px;
+}
+
+.company .list {
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
+  margin: 0 80px 0 0;
+  gap: 6em;
+}
+
+.company .list ul {
+  margin-top: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0
+}
+
+footer ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+footer ul li:hover {
+  color: var(--blue)
+}
+
+footer .email {
+  margin-top: 20px;
+}
+
+footer i {
+  margin-right: 5px;
 }
