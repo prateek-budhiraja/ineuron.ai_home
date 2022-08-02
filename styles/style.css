@@ -272,7 +272,7 @@ button.hero-cta:hover {
   scrollbar-width: none;
   display: grid;
   grid-auto-flow: column;
-  gap: 2.5em;
+  gap: 1em;
 }
 
 .cards::-webkit-scrollbar {
