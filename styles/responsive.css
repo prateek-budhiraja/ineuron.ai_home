@@ -1,5 +1,5 @@
 /* media query for mobile device */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 
   body {
     max-width: 100%;
@@ -142,7 +142,6 @@
 
   #wrapper {
     max-width: 100vw;
-    /* max-width: 00px; */
     position: relative;
     margin: auto 20px;
   }
@@ -163,6 +162,52 @@
   .course-text {
     padding: 0 10px;
     height: 140px;
+  }
+
+  .ott {
+    padding: 20px 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: .9fr 1fr;
+    gap: 1.5em;
+  }
+
+  .bg-popcorn {
+    display: none;
+  }
+
+  .ott .left h1 {
+    font-size: 40px;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 0px;
+    font-weight: 900;
+  }
+
+  .one {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+  }
+
+  .one h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    text-align: center;
+  }
+
+  .ott .right .neuron {
+    font-size: 48px;
+    top: 20px;
+    left: -30px;
+  }
+
+  .ott button {
+    margin-top: 28px;
+    padding: 8px 18px;
+    font-size: 16px;
   }
 
   #prev,
