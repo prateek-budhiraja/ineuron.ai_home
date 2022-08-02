@@ -1,9 +1,13 @@
 /* media query for mobile device */
 @media screen and (max-width: 500px) {
 
+  html,
   body {
-    max-width: 100%;
     overflow-x: hidden;
+  }
+
+  body {
+    position: relative
   }
 
   nav {
@@ -212,7 +216,7 @@
 
   .mentors .bg h1 {
     font-size: 120px;
-    left: -20px;
+    left: 20px;
     width: 140vw;
     top: -120px;
   }
@@ -229,10 +233,94 @@
     gap: 1em;
   }
 
+  .mission {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1.3fr;
+    gap: 0rem;
+  }
+
+  .bg-mission {
+    font-size: 100px;
+    left: -50px;
+  }
+
+  .mission .left h1 {
+    font-size: 70px;
+    font-weight: 900;
+    display: block;
+    margin: 0;
+  }
+
+  .mission .right {
+    font-size: 18px;
+    margin-right: 0px;
+    padding: 15px;
+    text-align: justify;
+    align-self: center;
+  }
+
+  .contact-container {
+    width: 100%;
+    padding: 20px 10px;
+    flex-direction: column-reverse;
+  }
+
+  .contact-container .right {
+    margin: 0;
+  }
+
+  .contact-container .right h1 {
+    font-size: 38px;
+    color: var(--black);
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .contact-container .right p {
+    font-size: 28px;
+    padding: 20px;
+  }
+
+  form {
+    display: block;
+    margin: auto;
+  }
+
+  .contact input,
+  textarea {
+    margin-top: 4px;
+    width: 280px;
+    border-radius: 12px;
+    border: 0;
+    padding: 8px;
+    outline: none;
+    /* z-index: 0; */
+  }
+
+  #cats {
+    display: none;
+  }
+
   #prev,
   #next,
   #mentor-prev,
   #mentor-next {
     display: none;
+  }
+
+  footer {
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr .8fr 1fr;
+    gap: 0;
+  }
+
+  .company h3 {
+    margin-left: 0px;
+    text-align: left;
   }
 }
