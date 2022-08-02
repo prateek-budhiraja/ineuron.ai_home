@@ -484,6 +484,7 @@ button.hero-cta:hover {
   color: var(--black);
   text-align: center;
   margin-top: 0;
+  text-align: justify;
 }
 
 
