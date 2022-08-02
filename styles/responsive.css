@@ -1,0 +1,78 @@
+/* media query for mobile device */
+@media screen and (max-width: 450px) {
+
+  nav {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  nav img {
+    width: 80px;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  #search-box {
+    display: block;
+  }
+
+  #search-box input {
+    display: none;
+  }
+
+  .nav-btn {
+    font-size: 10px;
+    width: 80px;
+    height: 28px;
+  }
+
+  #glass {
+    font-size: 12px;
+    position: absolute;
+    top: 14px;
+    left: -20px;
+  }
+
+  main .right {
+    display: none;
+  }
+
+  main .left h1 {
+    font-size: 40px;
+  }
+
+  main .left h1 span::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -2px;
+    z-index: -1;
+    background-color: var(--blue);
+    width: 100px;
+    height: 44px;
+    transform: rotate(-5deg);
+  }
+
+  main .left p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .buttons {
+    margin-top: 30px;
+  }
+
+  button.hero-cta {
+    border-radius: 20px;
+    font-size: 12px;
+    border: 0;
+    width: 100px;
+    height: 40px;
+    background-color: var(--blue);
+    margin-right: 10px;
+    font-weight: 400;
+    transition: 0.3s;
+  }
+}
