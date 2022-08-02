@@ -76,6 +76,12 @@ nav span i {
   background-color: var(--blue);
   border: 0;
   border-radius: 30px;
+  transition: .3s;
+}
+
+.nav-btn:hover {
+  box-shadow: -4px 4px var(--blue-shade);
+  transform: translate(0.4em, -.4em);
 }
 
 nav span {
@@ -306,7 +312,12 @@ button.hero-cta:hover {
   color: var(--black);
   border: 0;
   border-radius: 10px;
+  transition: .3s;
+}
 
+.card button:hover {
+  box-shadow: -4px 4px var(--black);
+  transform: translate(0.4em, -.4em);
 }
 
 #prev,
@@ -343,7 +354,7 @@ button.hero-cta:hover {
   background-color: var(--blue);
   padding: 40px 60px;
   position: relative;
-  z-index: -2;
+  /* z-index: -2; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -353,7 +364,7 @@ button.hero-cta:hover {
   height: 400px;
   top: 0px;
   right: 100px;
-  z-index: -1;
+  z-index: 0;
   position: absolute;
   opacity: 10%;
 }
@@ -365,7 +376,7 @@ button.hero-cta:hover {
 }
 
 .ott .left h1 {
-  z-index: 0;
+  z-index: 5;
   margin-top: 0;
   font-size: 94px;
   color: var(--black);
@@ -373,6 +384,7 @@ button.hero-cta:hover {
 }
 
 .ott .right {
+  z-index: 5;
   margin: auto;
   position: relative;
 }
@@ -401,7 +413,7 @@ button.hero-cta:hover {
   position: absolute;
   top: 30px;
   left: -60px;
-  -webkit-text-stroke: 1px var(--black);
+  /* -webkit-text-stroke: 1px var(--black); */
 }
 
 .ott button {
@@ -411,6 +423,14 @@ button.hero-cta:hover {
   font-size: 20px;
   background-color: var(--blue-shade);
   border-radius: 20px;
+  transition: 0.3s;
+  z-index: 99 !important;
+  cursor: pointer;
+}
+
+.ott button:hover {
+  box-shadow: -8px 8px var(--black);
+  transform: translate(0.4em, -.4em);
 }
 
 .mentors {
@@ -589,6 +609,12 @@ form button {
   background-color: var(--blue-shade);
   font-weight: 700;
   color: #fff;
+  transition: .3s;
+}
+
+form button:hover {
+  box-shadow: -2px 4px var(--black);
+  /* transform: translate(0.4em, 0em); */
 }
 
 .contact-container .right {
@@ -603,7 +629,7 @@ form button {
 .contact-container .right p {
   font-size: 42px;
   font-weight: 300;
-  color: var(--blue-shade);
+  color: var(--black);
 }
 
 footer img {
